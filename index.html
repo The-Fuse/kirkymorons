@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Congenial Selection Criteria for UG Admissions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    
+</head>
+<body>
+  <nav class="navbar navbar-light bg-light nv " style="text-align: center;">
+    <span class="navbar-brand h1 navbar-header" style="text-align: center; align-items: center; color: #be6a15;" >☜ Congenial Selection Criteria ☞</span>
+  </nav>
+    <div class="card container p-5 mt-4 ca" style="width: 90%;">
+        <h1 style="text-align: center; color: #9e579d;">☆</h1>
+        <h5 class="title" style="align-items: center; text-align: center; margin-bottom: 20px; color: #2f89fc;">  Calculate your Common Score </h5>
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">JEE Mains Percentile</label>
+              <input type="number" class="form-control" id="jeemains"  placeholder="Enter Jee Mains Percentile" required>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Total JEE Advanced Marks</label>
+              <input type="number" class="form-control" id="jeeadvancedtotal" placeholder="Enter Total Jee Advanced Marks" required>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Obtained JEE Advanced Marks</label>
+              <input type="number" class="form-control" id="jeeadvanced" placeholder="Enter obtained Jee Advanced Marks" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Select Topper</label>
+                <select class="form-control" id="topper" required>
+                  <option value="0">Yes</option>
+                  <option value="1">No</option>
+                </select>
+              </div>
+            <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#exampleModalCenter" onclick="calculatescore()">  Submit 🤟</button>
+          </form>
+    </div>
+    
+    <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="titlem">Your Common Score</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="loader-container">
+          <div class="icon-container">
+            <div class="success"></div>
+          </div>
+          <div class="loader"></div>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+          <div class="alert alert-primary" role="alert">
+            Wooh! 😎 Great your Common Score is : 
+          </div>
+        <h2 id="score"></h2>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-block" data-dismiss="modal">Ok 🤞</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    
+</body>
+</html>
